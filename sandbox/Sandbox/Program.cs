@@ -1,36 +1,31 @@
 using System;
 using System.ComponentModel;
+using System.IO.Pipes;
 
 class Program
 {
     static void Main(string[] args)
     {
-       string adjective = GetAdjective();
-       string noun = GetNoun();
-       
-       int number = Multiply(3, 4);
-       
-        Console.WriteLine($"I looked out the window and saw a {number} {adjective} {noun}s ");
+        Movie favoriteMovie = new Movie();
+        favoriteMovie._title = "Star Wars";
+        favoriteMovie._year = 1977;
+        favoriteMovie._runtime = 150;
+        favoriteMovie._rating = "PG";
+
+        Movie otherMovie = new Movie();
+        otherMovie._title = "Avatar";
+        otherMovie._year = 2000;
+        otherMovie._rating = "PG-13";
+        otherMovie._runtime = 162;
+
+        Console.WriteLine(favoriteMovie._title);
     }
 
-    static int Multiply (int number1, int nnumber2)
+    static void DisplayMovie(Movie aMovie);
     {
-        int product = number1 * nnumber2;
-        
-        return product;
+        Console.WriteLine($"(aMovie._title) - (aMovie._year)");
     }
+    
 
-    static string GetAdjective ()
-    {
-        string adjective = "yellow";
 
-        return adjective; 
-    }
-
-    static string GetNoun ()
-    {
-        string word = "bird"; 
-
-        return word;
-    }
-}
+}   
