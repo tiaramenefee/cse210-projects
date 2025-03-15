@@ -3,8 +3,6 @@ using System.Diagnostics;
 
 public class BreathingActivity: Activity
 {
-
-
     public BreathingActivity() : base("This activity will help you relax by guiding you through breathing exercises")
     {
 
