@@ -19,9 +19,9 @@ public abstract class Activity
         return _date;
     }
 
-    public abstract double GetDistance(); // in kilometers
-    public abstract double GetSpeed();    // in km/h
-    public abstract double GetPace();     // in min/km
+    public abstract double GetDistance();
+    public abstract double GetSpeed();
+    public abstract double GetPace();
 
     public virtual string GetSummary()
     {

@@ -10,7 +10,7 @@ public class Swimming : Activity
 
     public override double GetDistance()
     {
-        return _laps * 50 / 1000.0; // 50 meters per lap, convert to km
+        return _laps * 50 / 1000.0;
     }
 
     public override double GetSpeed()
